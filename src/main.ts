@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   //Cors options
   const corsOptions: CorsOptions = {
-    origin: 'http://localhost:4200', // Replace with the allowed origin(s) for your Angular app
+    origin: ['http://localhost:4200', 'https://dog-breed-frontend.vercel.app'], // Replace with the allowed origin(s) for your Angular app
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   };
