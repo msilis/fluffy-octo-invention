@@ -1,8 +1,4 @@
-export interface dogType {
-  id: number;
-  name: string;
-  bio: string;
-}
+import { dogType } from 'src/models/dogTypeInterface';
 
 export const dogBreeds: dogType[] = [
   {
